@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Northwind Analytics — Decision Engine</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+
+          colors: {
+            ink: {
+              950: '#0b1d33',
+              900: '#0f2947',
+              800: '#153a63',
+              700: '#1c4d82',
+              600: '#2f6faf',
+              500: '#5b93cc',
+              400: '#8bb8e0',
+              300: '#b9d6ee',
+              200: '#dcebf8',
+              100: '#eef5fc',
+              50: '#f6fafe',
+            },
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    body {
+      background: #eef5fc;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #eef5fc;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #b9d6ee;
+      border-radius: 4px;
+    }
+
+    .fade-in {
+      animation: fadeIn .25s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(4px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react.production.min.js"></script>
+
+</head>
+
+<body class="font-sans text-slate-800">
+
+  <div id="root"></div>
+
+  <!--
+    NOTE: this app is written with React.createElement (no JSX) so it can
+    run directly in the browser with zero build step -- no bundler, no
+    Babel-in-browser transform needed. See frontend/app.js.
+  -->
+
+  <script src="/app.js"></script>
+
+</body>
+</html>
