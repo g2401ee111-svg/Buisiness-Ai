@@ -1,4 +1,4 @@
-# Northwind Analytics — AI-Powered Business Decision Engine
+# Buisiness.ai — AI-Powered Business Decision Engine
 
 A working local prototype that turns "revenue dropped" into
 **WHAT → WHY → HOW MUCH → WHAT NEXT → WHAT IF**, backed by a real
